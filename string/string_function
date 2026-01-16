@@ -1,0 +1,137 @@
+#endswith
+stri="I am studying python from Youtube"
+print(stri.endswith("tube"))
+#capitalize
+stri="i am studying python from Youtube"
+print(stri.capitalize())
+print(stri)
+stri=stri.capitalize()
+print(stri)
+#replace
+st="I am studying python from Youtube"
+print(st.replace("python","java"))
+#count
+print(st.count("o"))
+#find
+print(st.find("python"))
+#index
+text="Python Programm"
+print(text.index("Programm"))
+text1="banana"
+print(text1.index("a",2,5))
+#upper
+print(st.upper())
+#lower
+print(st.lower())
+#Title
+print(st.title())
+#strip
+string=" I am studying python from Youtube  "
+print(string.strip())
+print(string.lstrip())
+print(string.rstrip())
+price ="###100###"
+print(price.lstrip("#"))
+print(price.rstrip("#"))
+print(price.strip("#"))
+price ="11100###"
+print(price.lstrip("1"))
+#split
+print(string.split())
+#join
+words = ["Python", "is", "awesome"]
+# "Using space ' ' as a delimiter here."
+sentence = " ".join(words)
+print(sentence)
+# output: Python is awesome
+data = ["Py", "thon"]
+print("-".join(data))  # output: Py-thon
+print("".join(data))   # output: Python
+list_of_strings = ["Rathul", "learning", "Python"]
+# "Joined with a comma (,)"
+result = ", ".join(list_of_strings)
+print(result)
+# output: Rathul, learning, Python
+#isalpha
+name = "Rathul"
+print(name.isalpha())
+# output: True
+user_id = "Rathul123"
+print(user_id.isalpha())
+# output: False
+#isdigit
+price = "500"
+print(price.isdigit())
+# output: True
+
+amount = "500tk"
+print(amount.isdigit())
+# output: False
+#isalnum
+user = "Ratul7"
+print(user.isalnum()) # output: True
+
+#casefold
+text = "der Fluß" # german word
+
+print(text.lower())     # output: der fluß (অক্ষরটি বদলায়নি)
+print(text.casefold())  # output: der fluss (here 'ß' is converted by 'ss')
+#"It converts all characters to lowercase just like lower(), but it is much more powerful (e.g., it can lowercase special characters in German or other languages). It is often used in large-scale ML (Machine Learning) projects."
+# using casefold for text matching
+str_one = "BANGLADESH"
+str_two = "bangladesh"
+
+if str_one.casefold() == str_two.casefold():
+    print("The strings are the same!")
+
+if str_one == str_two:
+    print("same")
+else:
+    print("False, they are not same!")
+
+text = "  python for Machine Learning  "
+
+# step for data cleaning
+clean_text = text.strip().lower().replace("machine", "deep")
+words = clean_text.split()
+
+print(clean_text) # output: "python for deep learning"
+print(words)      # output: ['python', 'for', 'deep', 'learning']
+
+
+text = "Python Pro"
+print(text.swapcase()) # output: pYTHON pRO
+text1 = "Rathul"
+print(text1[0:6:2])
+# output: Rtu #[start:end:step]
+
+print(text[::-1])
+# output: luhtaR (step=-1,here whole string will be reversed)
+#1. "To take every second character: str[::2] (specifying start and end is optional)." 2. "To reverse a string: This is very frequently asked in interviews."
+
+name = "Rathul"
+age = 25
+# f-string (Best practice)
+print(f"My name is {name} and I am {age} years old.")
+# output: My name is Rathul and I am 25 years old.
+#startswith
+py = "Python is fun"
+print(py.startswith("Python")) # output: True
+#z=fill
+id_no = "42"
+print(id_no.zfill(5)) # output: 00042
+#partition
+email = "rathul@example.com"
+print(email.partition("@")) # output: ('rathul', '@', 'example.com')
+#partition
+email = "rathul@example.com"
+print(email.partition("@")) # output: ('rathul', '@', 'example.com')
+#center,ljust,rjust
+text = "Python"
+print(text.center(20, "-")) # output: -------Python-------
+text = "Python"
+print(text.rjust(20, "-"))
+# Output: --------------Python
+text = "Python"
+print(text.ljust(20, "-"))
+# Output: Python--------------
