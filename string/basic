@@ -1,0 +1,34 @@
+str1="This is a string"
+str2='Rathul'
+Str3="This is ApnaColleges's tutorial"
+str4="""This is a string"""
+print(str1)
+print(str2)
+print(Str3)
+print(str4)
+# escape sequence character
+"""
+\n-New Line
+\t-Tab
+\'-Single Quote
+\"-Double Quote
+\\-Backslash
+"""
+"""
+print("Hello\nWorld")
+print("She said, \"Hello!\"")
+message = 'It\'s a beautiful day'
+print(message)
+path = "C:\\Users\\Ratul\\Desktop"
+print(path)
+"""
+#Concatenation
+str1="Rathul"
+str2="Hasan"
+len1=len(str1)
+print(len1)
+Str=str1+" "+str2
+len=len(Str)
+print(str1+" "+str2)
+print(len)
+print(Str)
