@@ -1,0 +1,14 @@
+str="Rathul Hasan Saion"
+ch=str[2]
+print(ch)
+"""It cannot be modified.It's immutable
+str="Rathul Hasan Saion"
+str[4]="S"
+ """
+#str[ starting_idx : ending_idx ] ending idx is not included
+str="Rathul Hasan Saion"
+print(str[1:4])
+print(str[1:len(str)])
+print(str[:4])#0:4
+print(str[1:])
+print(str[::-1])#reverse
