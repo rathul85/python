@@ -1,0 +1,14 @@
+marks=[90,98,96,95,99]
+print(marks) #Output:[90, 98, 96, 95, 99]
+print(type(marks)) #Output:<class 'list'>
+print(len(marks))#Output:5
+print(marks[0])#Output:90
+print(marks[-1])#Output:99
+#It can store elements of different types (integer, float, string, etc.)
+students=["Rathul",23,3.5,7,"Chittagong"]
+print(students)
+#Output:['Rathul', 23, 3.5, 7, 'Chittagong']
+#list mutable
+students[0]="Saion"
+print(students)
+#Output:['Saion', 23, 3.5, 7, 'Chittagong']
